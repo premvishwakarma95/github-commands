@@ -124,6 +124,6 @@ git checkout -b ligth-mode     // this will create new branch and make current b
 ## Merging branches
 - Merging is about bringing changes from one branch to another.
 - In Git we have two types of merges :
-- - Fast-Forward Merges (If branches have not diverged)
-- - 3-Way Merges (if branches have diverged)
-- - Fast-forward merge
+ - Fast-Forward Merges (If branches have not diverged)
+ - 3-Way Merges (if branches have diverged)
+ - Fast-forward merge
