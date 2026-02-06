@@ -88,13 +88,33 @@ git log
 
 ---
 
-## gitignore
+## .gitignore
 Now, when you run the git status command, it will not show the node_modules and .vscode folders as being tracked by git.
-
+- .gitignore
 ```bash
-.gitignore file
 node_modules
 .env
 .vscode
 ```
 
+---
+
+## .gitkeep
+- git doesn't add empty folder and if we want to add that folder in repo at that time we use .gitkeep file.
+- we need to define .gitkeep inside empty folder that we want to keep in repo
+- empty_folder/.gitkeep
+
+---
+
+## Creating a new branch
+To create a new branch, you can use the following command:
+```bash
+git branch                     // this command will tell all the branches that are present in the repository.
+git branch bug-fix             // this command will create bug-fix branch but your current branch will still be master i mean you would be still in current branch where you were.
+git switch bug-fix             // this command will switch from one branch to another i mean if we are in "master" branch right now and want to go in bug-fix branch then we use this command.
+git log                        // this will give all the logs of git activity.
+git switch main
+git switch -c dark-mode        // this will create a new branch with name dark-mode and now you will be in dark-mode branch i mean your current branch would be this.
+git checkout orange-mode       // this will switch from current master branch to orange-mode branch if this branch exists.
+git checkout -b ligth-mode     // this will create new branch and make current branch light-mode, now you will work on this light-mode branch.
+```
