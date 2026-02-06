@@ -55,3 +55,32 @@ git commit -m "Initial commit"
 git push origin main
 git pull origin main
 ```
+
+---
+
+## Git config commands
+We use these Git config commands to identify who you are when you make commits 👤
+```bash
+git config --global user.email "your-email@example.com"
+git config --global user.name "Your Name"
+// This will show you all the settings that you have changed.
+git config --list
+```
+
+---
+
+## Creating a repository
+```bash
+git init
+git add <file> <file2>
+git status
+git commit -m "commit message"
+git status
+```
+
+## Logs
+This command will show you the history of your repository. It will show you all the commits that were made to the repository. You can use the --oneline flag to show only the commit message. This will make the output more compact and easier to read.
+```bash
+git log
+```
+
