@@ -72,15 +72,29 @@ git config --list
 ## Creating a repository
 ```bash
 git init
-git add <file> <file2>
+git add <file> <file2>     // this will add only file1 and file2 changes
+git add .                 // this will add all the changes of all file
 git status
 git commit -m "commit message"
 git status
+git push origin prem_dev
 ```
 
 ## Logs
 This command will show you the history of your repository. It will show you all the commits that were made to the repository. You can use the --oneline flag to show only the commit message. This will make the output more compact and easier to read.
 ```bash
 git log
+```
+
+---
+
+## gitignore
+Now, when you run the git status command, it will not show the node_modules and .vscode folders as being tracked by git.
+
+```bash
+.gitignore file
+node_modules
+.env
+.vscode
 ```
 
