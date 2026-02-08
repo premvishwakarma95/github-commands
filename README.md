@@ -156,3 +156,8 @@ git merge bug-fix
 ```bash
 git merge --abort
 ```
+
+---
+
+### What is `git diff`?
+`git diff` shows the difference between your working code and the last committed version.
