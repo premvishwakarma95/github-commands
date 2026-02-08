@@ -160,4 +160,27 @@ git merge --abort
 ---
 
 ### What is `git diff`?
-`git diff` shows the difference between your working code and the last committed version.
+- `git diff` shows the difference between your working code and the last committed version.
+- It tells you what you have changed but not yet added (staged).
+```bash
+git diff
+```
+
+---
+
+### What is `git diff --staged`?
+- `git diff --staged` shows the changes that are already added to the staging area and will be included in the next commit.
+- I mean to say this command shows what changes we have last committed or added.
+- Simple example -> Step 1: Edit a file
+```js
+const version = 1;
+```
+- Change it to:
+```js
+const version = 2;
+```
+Now if we will run `git diff --staged` then we will get this below thing.
+```diff
+- const version = 1;
++ const version = 2;
+```
