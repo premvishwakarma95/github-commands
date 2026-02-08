@@ -193,3 +193,28 @@ Now if we will run `git diff --staged` then we will get this below thing.
 ```bash
 git stash
 ```
+
+---
+
+### Command to give the name to the statsh.
+You can also name the stash by using the following command:
+```bash
+git stash save "work in progress on X feature"
+```
+
+### View the stash list
+You can view the list of stashes by using the following command:
+```bash
+git stash list
+```
+
+### how to add remote means hoisting code server, where to add code with this command we can set?
+```bash
+git remote add origin https://github.com/USERNAME/REPOSITORY_NAME.git
+```
+
+### command to set ogirin branch.
+Now whenever we will run this `git push` command the automatically push in set command like prem_dev no need to specify branch name.
+```bash
+git push --set-upstream origin prem_dev
+```
