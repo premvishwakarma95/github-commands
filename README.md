@@ -184,3 +184,12 @@ Now if we will run `git diff --staged` then we will get this below thing.
 - const version = 1;
 + const version = 2;
 ```
+
+---
+
+### what is `git stash` command?
+- This command clear all the changes we made and not commited to the branch.
+- `git stash` temporarily saves your uncommitted changes and cleans your working directory.
+```bash
+git stash
+```
