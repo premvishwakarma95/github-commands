@@ -222,3 +222,10 @@ Now whenever we will run this `git push` command the automatically push in set c
 ```bash
 git push --set-upstream origin prem_dev
 ```
+
+---
+
+### command to check remote added or not.
+```bash
+git remote -v
+```
